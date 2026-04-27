@@ -1,0 +1,9 @@
+body{margin:0;background:#0f172a;color:#fff;font-family:Arial}
+nav{display:flex;justify-content:space-between;padding:15px;background:#111827}
+.grid{display:grid;grid-template-columns:2fr 1fr;gap:20px;padding:20px}
+.panel{background:#1e293b;padding:20px;border-radius:12px}
+#feed{width:100%;border-radius:10px}
+#status{padding:20px;border-radius:10px;font-size:28px;text-align:center}
+.normal{background:#166534}
+.alert{background:#b91c1c;animation:pulse 1s infinite}
+@keyframes pulse{50%{opacity:.6}}

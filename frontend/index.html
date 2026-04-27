@@ -1,0 +1,55 @@
+<!-- file name: frontend/index.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SkySentinel AI</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- Alarm Sound -->
+<audio id="alarmSound" preload="auto" loop>
+    <source src="assets/beep.mp3" type="audio/mpeg">
+</audio>
+
+<!-- Navbar -->
+<nav>
+    <h1>SkySentinel AI</h1>
+    <div id="meta">JETSON-NANO-01 | Patiala Campus</div>
+    <div id="clock"></div>
+</nav>
+
+<!-- Main Layout -->
+<div class="grid">
+
+    <!-- Live Feed -->
+    <div class="panel">
+        <h2>Live Feed</h2>
+        <img src="/video" id="feed" alt="Live Camera Feed">
+    </div>
+
+    <!-- Status Panel -->
+    <div class="panel">
+        <h2>Status</h2>
+
+        <div id="status" class="normal">
+            NORMAL
+        </div>
+
+        <p>
+            Drone Count:
+            <span id="count">0</span>
+        </p>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
